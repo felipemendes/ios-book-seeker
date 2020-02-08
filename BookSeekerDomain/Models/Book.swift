@@ -1,0 +1,44 @@
+//
+//  Book.swift
+//  BookSeeker
+//
+//  Created by Felipe Mendes on 07/02/20.
+//  Copyright © 2020 CIT. All rights reserved.
+//
+
+import Foundation
+
+struct Book: Codable {
+    let name: String
+    let description: String
+    let cover: String
+    let artist: String
+    let artistUrl: String
+    let rating: Double
+    let genres: [String]
+    let formattedPrice: String
+
+    enum CodingKeys: String, CodingKey {
+        case name = "trackName"
+        case description
+        case cover = "artworkUrl100"
+        case artist = "artistName"
+        case artistUrl = "artistViewUrl"
+        case rating = "averageUserRating"
+        case genres
+        case formattedPrice
+    }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+
+        name = try container.decode(String.self, forKey: .name)
+        description = try container.decode(String.self, forKey: .description)
+        cover = try container.decode(String.self, forKey: .cover)
+        artist = try container.decode(String.self, forKey: .artist)
+        artistUrl = try container.decode(String.self, forKey: .artistUrl)
+        rating = try container.decode(Double.self, forKey: .rating)
+        genres = try container.decode([String].self, forKey: .genres)
+        formattedPrice = try container.decode(String.self, forKey: .formattedPrice)
+    }
+}

@@ -3,7 +3,8 @@ platform :ios, '9.0'
 target 'BookSeeker' do
   use_frameworks!
   pod 'SwiftLint'
-  pod 'Alamofire'
+  pod 'Moya'
+  pod 'Kingfisher'
   pod 'Swinject'
   pod 'RxSwift', '~> 4'
   pod 'RxCocoa', '~> 4'

@@ -10,6 +10,10 @@
 		0203122323ECE2900052E070 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0203122123ECE2900052E070 /* DataModel.xcdatamodeld */; };
 		0203122523ECE2E30052E070 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0203122423ECE2E30052E070 /* Search.swift */; };
 		0203122723ECE2FD0052E070 /* SearchDataAccessProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0203122623ECE2FD0052E070 /* SearchDataAccessProvider.swift */; };
+		0203122E23ECEAB20052E070 /* BookRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0203122D23ECEAB20052E070 /* BookRequest.swift */; };
+		0203123023ECEB3D0052E070 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0203122F23ECEB3D0052E070 /* ServiceManager.swift */; };
+		0203123423EE28E60052E070 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0203123323EE28E60052E070 /* Book.swift */; };
+		0203123A23EE329A0052E070 /* BookResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0203123923EE329A0052E070 /* BookResponse.swift */; };
 		0DC3E15232745E2BF195F1E2 /* Pods_BookSeeker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F7DABA4F1A32A629ADE4365 /* Pods_BookSeeker.framework */; };
 		B1B751E4233D28D6002C83F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B751E3233D28D6002C83F2 /* AppDelegate.swift */; };
 		B1B751ED233D28D8002C83F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1B751EC233D28D8002C83F2 /* Assets.xcassets */; };
@@ -38,6 +42,10 @@
 		0203122223ECE2900052E070 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		0203122423ECE2E30052E070 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		0203122623ECE2FD0052E070 /* SearchDataAccessProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDataAccessProvider.swift; sourceTree = "<group>"; };
+		0203122D23ECEAB20052E070 /* BookRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRequest.swift; sourceTree = "<group>"; };
+		0203122F23ECEB3D0052E070 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		0203123323EE28E60052E070 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		0203123923EE329A0052E070 /* BookResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookResponse.swift; sourceTree = "<group>"; };
 		31B8D881FA8E490F13BFE945 /* Pods-BookSeeker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookSeeker.release.xcconfig"; path = "Target Support Files/Pods-BookSeeker/Pods-BookSeeker.release.xcconfig"; sourceTree = "<group>"; };
 		4F7DABA4F1A32A629ADE4365 /* Pods_BookSeeker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookSeeker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1B751E0233D28D6002C83F2 /* BookSeeker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookSeeker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +113,40 @@
 			path = BookSeekerStorage;
 			sourceTree = "<group>";
 		};
+		0203122B23ECEA6B0052E070 /* BookSeekerService */ = {
+			isa = PBXGroup;
+			children = (
+				0203122C23ECEA940052E070 /* Request */,
+				0203122F23ECEB3D0052E070 /* ServiceManager.swift */,
+			);
+			path = BookSeekerService;
+			sourceTree = "<group>";
+		};
+		0203122C23ECEA940052E070 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				0203122D23ECEAB20052E070 /* BookRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		0203123123EE282A0052E070 /* BookSeekerDomain */ = {
+			isa = PBXGroup;
+			children = (
+				0203123223EE28B20052E070 /* Models */,
+			);
+			path = BookSeekerDomain;
+			sourceTree = "<group>";
+		};
+		0203123223EE28B20052E070 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0203123323EE28E60052E070 /* Book.swift */,
+				0203123923EE329A0052E070 /* BookResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		98F9D695D3979560F9D50360 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +168,8 @@
 			isa = PBXGroup;
 			children = (
 				B1B751E2233D28D6002C83F2 /* BookSeeker */,
+				0203123123EE282A0052E070 /* BookSeekerDomain */,
+				0203122B23ECEA6B0052E070 /* BookSeekerService */,
 				0203122023ECE25C0052E070 /* BookSeekerStorage */,
 				B1B751F9233D28D8002C83F2 /* BookSeekerTests */,
 				B1B75204233D28D9002C83F2 /* BookSeekerUITests */,
@@ -365,8 +409,12 @@
 			files = (
 				0203122523ECE2E30052E070 /* Search.swift in Sources */,
 				B1B751E4233D28D6002C83F2 /* AppDelegate.swift in Sources */,
+				0203123423EE28E60052E070 /* Book.swift in Sources */,
 				0203122723ECE2FD0052E070 /* SearchDataAccessProvider.swift in Sources */,
+				0203122E23ECEAB20052E070 /* BookRequest.swift in Sources */,
 				0203122323ECE2900052E070 /* DataModel.xcdatamodeld in Sources */,
+				0203123023ECEB3D0052E070 /* ServiceManager.swift in Sources */,
+				0203123A23EE329A0052E070 /* BookResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,7 +622,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BookSeekerTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -595,7 +643,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BookSeekerTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -615,6 +663,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BookSeekerUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -634,6 +683,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BookSeekerUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
