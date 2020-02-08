@@ -14,7 +14,7 @@ struct Book: Codable {
     let cover: String
     let artist: String
     let artistUrl: String
-    let rating: Double
+    let rating: Double?
     let genres: [String]
     let formattedPrice: String
 
@@ -37,8 +37,10 @@ struct Book: Codable {
         cover = try container.decode(String.self, forKey: .cover)
         artist = try container.decode(String.self, forKey: .artist)
         artistUrl = try container.decode(String.self, forKey: .artistUrl)
-        rating = try container.decode(Double.self, forKey: .rating)
         genres = try container.decode([String].self, forKey: .genres)
         formattedPrice = try container.decode(String.self, forKey: .formattedPrice)
+
+        let decodedRating = try? container.decode(Double.self, forKey: .rating)
+        rating = decodedRating ?? nil
     }
 }
