@@ -9,6 +9,7 @@
 import Foundation
 
 struct Book: Codable {
+    let trackId: Int
     let name: String
     let description: String
     let cover: String
@@ -19,6 +20,7 @@ struct Book: Codable {
     let formattedPrice: String
 
     enum CodingKeys: String, CodingKey {
+        case trackId
         case name = "trackName"
         case description
         case cover = "artworkUrl100"
@@ -32,6 +34,7 @@ struct Book: Codable {
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
 
+        trackId = try container.decode(Int.self, forKey: .trackId)
         name = try container.decode(String.self, forKey: .name)
         description = try container.decode(String.self, forKey: .description)
         cover = try container.decode(String.self, forKey: .cover)
