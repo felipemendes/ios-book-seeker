@@ -13,7 +13,7 @@ import RxBlocking
 
 @testable import BookSeeker
 
-class BookSeekerTests: XCTestCase {
+class BookSeekerStorageTests: XCTestCase {
 
     private var sut: SearchDataAccessProvider!
 
@@ -22,6 +22,7 @@ class BookSeekerTests: XCTestCase {
         sut = SearchDataAccessProvider()
         sut.deleteAll()
     }
+
     override func tearDown() {
         sut = nil
         super.tearDown()
