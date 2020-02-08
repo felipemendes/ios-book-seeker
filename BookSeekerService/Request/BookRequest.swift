@@ -26,8 +26,8 @@ extension BookRequest: TargetType {
 
     var path: String {
         switch self {
-        case .getBook(let term):
-            return "search?term=\(term)&entity=ibook"
+        case .getBook:
+            return "search"
         }
     }
 
@@ -41,8 +41,11 @@ extension BookRequest: TargetType {
 
     var task: Task {
         switch self {
-        case .getBook:
-            return .requestPlain
+        case .getBook(let term):
+            let params: [String: Any] = ["term": term,
+                                         "entity": "ibook"]
+            return .requestParameters(parameters: params,
+                                      encoding: URLEncoding.default)
         }
     }
 
