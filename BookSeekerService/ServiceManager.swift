@@ -19,7 +19,7 @@ struct ServiceManager: Service {
 
     // MARK: - TYPEALIASES
 
-    typealias BookCompletion = (_ book: Book?, _ error: String?) -> Void
+    typealias BookCompletion = (_ book: BookResponse?, _ error: String?) -> Void
 
     // MARK: - PROPERTIES
 
@@ -36,7 +36,7 @@ struct ServiceManager: Service {
             switch response {
             case let .success(response):
                 do {
-                    let results = try JSONDecoder().decode(Book.self, from: response.data)
+                    let results = try JSONDecoder().decode(BookResponse.self, from: response.data)
                     completion(results, nil)
                 } catch let error {
                     completion(nil, "[API Error]: \(error.localizedDescription)")
