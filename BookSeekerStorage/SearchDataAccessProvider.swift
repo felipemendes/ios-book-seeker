@@ -34,13 +34,13 @@ public class SearchDataAccessProvider {
     // MARK: - PRIVATE SETUP
 
     public func retrieveObservableData() -> Observable<[Search]> {
-        searchFromCoreData.value = retrieveData()
+        searchFromCoreData.value = retrieveData().reversed()
         return searchFromCoreData.asObservable()
     }
 
     public func add(_ keyword: String) {
         if checkExistence(for: keyword) {
-            print("Data already added")
+            print("[Storage Error]: Data already added")
             return
         }
 
@@ -52,7 +52,7 @@ public class SearchDataAccessProvider {
             try managedObjectContext.save()
             searchFromCoreData.value = retrieveData()
         } catch {
-            fatalError("Error on add data: \(#function) on \(#line)")
+            fatalError("[Storage Error]: Error on add data: \(#function) on \(#line)")
         }
     }
 
@@ -65,7 +65,7 @@ public class SearchDataAccessProvider {
             try managedObjectContext.save()
             searchFromCoreData.value = retrieveData()
         } catch {
-            fatalError("Error on delete data")
+            fatalError("[Storage Error]: Error on delete data")
         }
     }
 
@@ -83,7 +83,7 @@ public class SearchDataAccessProvider {
         do {
             return try managedObjectContext.fetch(searchRequest)
         } catch {
-            print("No Search Data retrieved")
+            print("[Storage Error]: No Search Data retrieved")
             return []
         }
     }
