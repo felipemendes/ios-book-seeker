@@ -14,21 +14,16 @@
 		0203123023ECEB3D0052E070 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0203122F23ECEB3D0052E070 /* ServiceManager.swift */; };
 		0203123423EE28E60052E070 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0203123323EE28E60052E070 /* Book.swift */; };
 		0203123A23EE329A0052E070 /* BookResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0203123923EE329A0052E070 /* BookResponse.swift */; };
+		0203123D23EE377F0052E070 /* BookSeekerStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0203123C23EE377F0052E070 /* BookSeekerStorageTests.swift */; };
 		0DC3E15232745E2BF195F1E2 /* Pods_BookSeeker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F7DABA4F1A32A629ADE4365 /* Pods_BookSeeker.framework */; };
 		B1B751E4233D28D6002C83F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B751E3233D28D6002C83F2 /* AppDelegate.swift */; };
 		B1B751ED233D28D8002C83F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1B751EC233D28D8002C83F2 /* Assets.xcassets */; };
 		B1B751F0233D28D8002C83F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1B751EE233D28D8002C83F2 /* LaunchScreen.storyboard */; };
+		CDB38D78F99DBF468B5FD9A3 /* libPods-BookSeekerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E77C74A7E0FFDC864FCE131B /* libPods-BookSeekerTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		B1B751F7233D28D8002C83F2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B1B751D8233D28D6002C83F2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B1B751DF233D28D6002C83F2;
-			remoteInfo = BookSeeker;
-		};
-		B1B75202233D28D9002C83F2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B1B751D8233D28D6002C83F2 /* Project object */;
 			proxyType = 1;
@@ -46,7 +41,9 @@
 		0203122F23ECEB3D0052E070 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		0203123323EE28E60052E070 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		0203123923EE329A0052E070 /* BookResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookResponse.swift; sourceTree = "<group>"; };
+		0203123C23EE377F0052E070 /* BookSeekerStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSeekerStorageTests.swift; sourceTree = "<group>"; };
 		31B8D881FA8E490F13BFE945 /* Pods-BookSeeker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookSeeker.release.xcconfig"; path = "Target Support Files/Pods-BookSeeker/Pods-BookSeeker.release.xcconfig"; sourceTree = "<group>"; };
+		3FC463FEE6B8A8869E69A364 /* Pods-BookSeekerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookSeekerTests.debug.xcconfig"; path = "Target Support Files/Pods-BookSeekerTests/Pods-BookSeekerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4F7DABA4F1A32A629ADE4365 /* Pods_BookSeeker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookSeeker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1B751E0233D28D6002C83F2 /* BookSeeker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookSeeker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1B751E3233D28D6002C83F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -55,8 +52,8 @@
 		B1B751F1233D28D8002C83F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1B751F6233D28D8002C83F2 /* BookSeekerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookSeekerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1B751FC233D28D8002C83F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B1B75201233D28D9002C83F2 /* BookSeekerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookSeekerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1B75207233D28D9002C83F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E77C74A7E0FFDC864FCE131B /* libPods-BookSeekerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BookSeekerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC538FD9C107A4556A3DE6B7 /* Pods-BookSeekerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookSeekerTests.release.xcconfig"; path = "Target Support Files/Pods-BookSeekerTests/Pods-BookSeekerTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,13 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B1B751FE233D28D9002C83F2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				CDB38D78F99DBF468B5FD9A3 /* libPods-BookSeekerTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,11 +138,21 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		0203123B23EE375A0052E070 /* BookSeekerStorageTests */ = {
+			isa = PBXGroup;
+			children = (
+				0203123C23EE377F0052E070 /* BookSeekerStorageTests.swift */,
+			);
+			path = BookSeekerStorageTests;
+			sourceTree = "<group>";
+		};
 		98F9D695D3979560F9D50360 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				0043A0DA9B201F3B8E554D5F /* Pods-BookSeeker.debug.xcconfig */,
 				31B8D881FA8E490F13BFE945 /* Pods-BookSeeker.release.xcconfig */,
+				3FC463FEE6B8A8869E69A364 /* Pods-BookSeekerTests.debug.xcconfig */,
+				EC538FD9C107A4556A3DE6B7 /* Pods-BookSeekerTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -160,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				4F7DABA4F1A32A629ADE4365 /* Pods_BookSeeker.framework */,
+				E77C74A7E0FFDC864FCE131B /* libPods-BookSeekerTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -172,7 +174,6 @@
 				0203122B23ECEA6B0052E070 /* BookSeekerService */,
 				0203122023ECE25C0052E070 /* BookSeekerStorage */,
 				B1B751F9233D28D8002C83F2 /* BookSeekerTests */,
-				B1B75204233D28D9002C83F2 /* BookSeekerUITests */,
 				B1B751E1233D28D6002C83F2 /* Products */,
 				98F9D695D3979560F9D50360 /* Pods */,
 				9EC2C6AB283B7BB5E5C80D54 /* Frameworks */,
@@ -184,7 +185,6 @@
 			children = (
 				B1B751E0233D28D6002C83F2 /* BookSeeker.app */,
 				B1B751F6233D28D8002C83F2 /* BookSeekerTests.xctest */,
-				B1B75201233D28D9002C83F2 /* BookSeekerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -201,17 +201,10 @@
 		B1B751F9233D28D8002C83F2 /* BookSeekerTests */ = {
 			isa = PBXGroup;
 			children = (
+				0203123B23EE375A0052E070 /* BookSeekerStorageTests */,
 				B1B751FC233D28D8002C83F2 /* Info.plist */,
 			);
 			path = BookSeekerTests;
-			sourceTree = "<group>";
-		};
-		B1B75204233D28D9002C83F2 /* BookSeekerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				B1B75207233D28D9002C83F2 /* Info.plist */,
-			);
-			path = BookSeekerUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +234,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1B7520D233D28D9002C83F2 /* Build configuration list for PBXNativeTarget "BookSeekerTests" */;
 			buildPhases = (
+				FE316AF6D339D3DE221F1B0F /* [CP] Check Pods Manifest.lock */,
 				B1B751F2233D28D8002C83F2 /* Sources */,
 				B1B751F3233D28D8002C83F2 /* Frameworks */,
 				B1B751F4233D28D8002C83F2 /* Resources */,
@@ -254,24 +248,6 @@
 			productName = BookSeekerTests;
 			productReference = B1B751F6233D28D8002C83F2 /* BookSeekerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		B1B75200233D28D9002C83F2 /* BookSeekerUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B1B75210233D28D9002C83F2 /* Build configuration list for PBXNativeTarget "BookSeekerUITests" */;
-			buildPhases = (
-				B1B751FD233D28D9002C83F2 /* Sources */,
-				B1B751FE233D28D9002C83F2 /* Frameworks */,
-				B1B751FF233D28D9002C83F2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B1B75203233D28D9002C83F2 /* PBXTargetDependency */,
-			);
-			name = BookSeekerUITests;
-			productName = BookSeekerUITests;
-			productReference = B1B75201233D28D9002C83F2 /* BookSeekerUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -288,10 +264,7 @@
 					};
 					B1B751F5233D28D8002C83F2 = {
 						CreatedOnToolsVersion = 11.0;
-						TestTargetID = B1B751DF233D28D6002C83F2;
-					};
-					B1B75200233D28D9002C83F2 = {
-						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1010;
 						TestTargetID = B1B751DF233D28D6002C83F2;
 					};
 				};
@@ -311,7 +284,6 @@
 			targets = (
 				B1B751DF233D28D6002C83F2 /* BookSeeker */,
 				B1B751F5233D28D8002C83F2 /* BookSeekerTests */,
-				B1B75200233D28D9002C83F2 /* BookSeekerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -327,13 +299,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B1B751F4233D28D8002C83F2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B1B751FF233D28D9002C83F2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -400,6 +365,28 @@
 			shellPath = /bin/sh;
 			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
 		};
+		FE316AF6D339D3DE221F1B0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BookSeekerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -422,13 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B1B751FD233D28D9002C83F2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				0203123D23EE377F0052E070 /* BookSeekerStorageTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,11 +420,6 @@
 			isa = PBXTargetDependency;
 			target = B1B751DF233D28D6002C83F2 /* BookSeeker */;
 			targetProxy = B1B751F7233D28D8002C83F2 /* PBXContainerItemProxy */;
-		};
-		B1B75203233D28D9002C83F2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B1B751DF233D28D6002C83F2 /* BookSeeker */;
-			targetProxy = B1B75202233D28D9002C83F2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -509,7 +485,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -564,7 +540,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -617,9 +593,11 @@
 		};
 		B1B7520E233D28D9002C83F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FC463FEE6B8A8869E69A364 /* Pods-BookSeekerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BookSeekerTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -630,7 +608,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ciandt.book.seeker.BookSeekerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookSeeker.app/BookSeeker";
 			};
@@ -638,9 +617,11 @@
 		};
 		B1B7520F233D28D9002C83F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC538FD9C107A4556A3DE6B7 /* Pods-BookSeekerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BookSeekerTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -651,49 +632,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ciandt.book.seeker.BookSeekerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookSeeker.app/BookSeeker";
-			};
-			name = Release;
-		};
-		B1B75211233D28D9002C83F2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BookSeekerUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ciandt.book.seeker.BookSeekerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BookSeeker;
-			};
-			name = Debug;
-		};
-		B1B75212233D28D9002C83F2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BookSeekerUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ciandt.book.seeker.BookSeekerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BookSeeker;
 			};
 			name = Release;
 		};
@@ -723,15 +664,6 @@
 			buildConfigurations = (
 				B1B7520E233D28D9002C83F2 /* Debug */,
 				B1B7520F233D28D9002C83F2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B1B75210233D28D9002C83F2 /* Build configuration list for PBXNativeTarget "BookSeekerUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B1B75211233D28D9002C83F2 /* Debug */,
-				B1B75212233D28D9002C83F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
