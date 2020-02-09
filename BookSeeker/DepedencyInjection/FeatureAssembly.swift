@@ -23,6 +23,20 @@ public class FeatureAssembly: Assembly {
             return FactoryImplementation(resolver: resolver)
         }
 
+        // MARK: - BookSeekerSearchTextFieldViewController
+
+        container.register(BookSeekerSearchTextFieldViewModel.self) { resolver in
+            let searchDataAccessProvider = resolver.resolve(SearchDataAccessProvider.self)!
+            return BookSeekerSearchTextFieldViewModel(searchDataAccessProvider: searchDataAccessProvider)
+        }
+
+        container.register(BookSeekerSearchTextFieldViewController.self) { resolver in
+            let viewModel = resolver.resolve(BookSeekerSearchTextFieldViewModel.self)!
+            let pastSearchesViewModel = resolver.resolve(PastSearchesViewModel.self)!
+            return BookSeekerSearchTextFieldViewController(viewModel: viewModel,
+                                                           pastSearchesViewModel: pastSearchesViewModel)
+        }
+
         // MARK: - BookSeekerSearchResultViewController
 
         container.register(BookSeekerSearchResultViewModel.self) { resolver in

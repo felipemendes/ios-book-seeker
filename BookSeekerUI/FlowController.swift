@@ -31,8 +31,21 @@ public final class FlowController {
     /// Starts the main flow. This will setup the internal Main Controller and
     /// push it into navigation controller.
     public func start() {
-        presentSearchResult(withTerm: "Direito")
+        presentSearch()
     }
+
+    // MARK: - PRIVATE FUNCTIONS
+
+    // MARK: Search
+
+    private func presentSearch() {
+        let viewController = factory.makeBookSeekerSearchTextFieldViewController()
+        viewController.delegate = self
+        navigationController.navigationBar.setValue(true, forKey: "hidesShadow")
+        navigationController.pushViewController(viewController, animated: true)
+    }
+
+    // MARK: SearchResult
 
     private func presentSearchResult(withTerm term: String) {
         let viewController = factory.makeSearchResultViewController(withTerm: term)
@@ -40,11 +53,22 @@ public final class FlowController {
         navigationController.pushViewController(viewController, animated: true)
     }
 
+    // MARK: SearchDetails
+
     private func presentDetails(withIdentifier identifier: Int) {
         let viewController = factory.makeBookSeekerDetailViewController(withIdentifier: identifier)
         viewController.delegate = self
         let detailNavigation = UINavigationController(rootViewController: viewController)
         navigationController.present(detailNavigation, animated: true, completion: nil)
+    }
+}
+
+// MARK: - BookSeekerSearchTextFieldViewControllerDelegate
+
+extension FlowController: BookSeekerSearchTextFieldViewControllerDelegate {
+    public func bookSeekerSearchTextFieldViewControllerDelegate(_ viewController: UIViewController,
+                                                                didSearch keyword: String) {
+        presentSearchResult(withTerm: keyword)
     }
 }
 

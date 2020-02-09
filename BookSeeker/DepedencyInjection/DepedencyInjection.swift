@@ -16,7 +16,8 @@ public class DepedencyInjection {
     public static func build() -> [Assembly] {
         return [
             FeatureAssembly(),
-            ServiceAssembly()
+            ServiceAssembly(),
+            ComponentAssembly()
         ]
     }
 }

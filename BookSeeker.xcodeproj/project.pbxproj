@@ -40,6 +40,13 @@
 		0269F91B23F091FF005FD857 /* PastSearchesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0269F91A23F091FF005FD857 /* PastSearchesViewCell.swift */; };
 		0269F91F23F09456005FD857 /* PastSearchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0269F91E23F09456005FD857 /* PastSearchesView.swift */; };
 		0269F92123F094E3005FD857 /* PastSearchesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0269F92023F094E3005FD857 /* PastSearchesViewModel.swift */; };
+		0269F92323F095C1005FD857 /* BookSeekerSearchTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0269F92223F095C1005FD857 /* BookSeekerSearchTextFieldViewController.swift */; };
+		0269F92523F095CA005FD857 /* BookSeekerSearchTextFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0269F92423F095CA005FD857 /* BookSeekerSearchTextFieldViewModel.swift */; };
+		0269F92723F095D1005FD857 /* BookSeekerSearchTextFieldViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0269F92623F095D0005FD857 /* BookSeekerSearchTextFieldViewControllerDelegate.swift */; };
+		0269F92923F09832005FD857 /* SearchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0269F92823F09832005FD857 /* SearchType.swift */; };
+		0269F92C23F098FC005FD857 /* SearchTextFieldItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0269F92B23F098FC005FD857 /* SearchTextFieldItemView.swift */; };
+		0269F92E23F09F7D005FD857 /* ComponentAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0269F92D23F09F7D005FD857 /* ComponentAssembly.swift */; };
+		0269F93223F0ABC1005FD857 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0269F93123F0ABC1005FD857 /* UIViewController+Extensions.swift */; };
 		0DC3E15232745E2BF195F1E2 /* Pods_BookSeeker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F7DABA4F1A32A629ADE4365 /* Pods_BookSeeker.framework */; };
 		B1B751E4233D28D6002C83F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B751E3233D28D6002C83F2 /* AppDelegate.swift */; };
 		B1B751ED233D28D8002C83F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1B751EC233D28D8002C83F2 /* Assets.xcassets */; };
@@ -92,6 +99,13 @@
 		0269F91A23F091FF005FD857 /* PastSearchesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastSearchesViewCell.swift; sourceTree = "<group>"; };
 		0269F91E23F09456005FD857 /* PastSearchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastSearchesView.swift; sourceTree = "<group>"; };
 		0269F92023F094E3005FD857 /* PastSearchesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastSearchesViewModel.swift; sourceTree = "<group>"; };
+		0269F92223F095C1005FD857 /* BookSeekerSearchTextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSeekerSearchTextFieldViewController.swift; sourceTree = "<group>"; };
+		0269F92423F095CA005FD857 /* BookSeekerSearchTextFieldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSeekerSearchTextFieldViewModel.swift; sourceTree = "<group>"; };
+		0269F92623F095D0005FD857 /* BookSeekerSearchTextFieldViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSeekerSearchTextFieldViewControllerDelegate.swift; sourceTree = "<group>"; };
+		0269F92823F09832005FD857 /* SearchType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchType.swift; sourceTree = "<group>"; };
+		0269F92B23F098FC005FD857 /* SearchTextFieldItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextFieldItemView.swift; sourceTree = "<group>"; };
+		0269F92D23F09F7D005FD857 /* ComponentAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentAssembly.swift; sourceTree = "<group>"; };
+		0269F93123F0ABC1005FD857 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		31B8D881FA8E490F13BFE945 /* Pods-BookSeeker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookSeeker.release.xcconfig"; path = "Target Support Files/Pods-BookSeeker/Pods-BookSeeker.release.xcconfig"; sourceTree = "<group>"; };
 		3FC463FEE6B8A8869E69A364 /* Pods-BookSeekerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookSeekerTests.debug.xcconfig"; path = "Target Support Files/Pods-BookSeekerTests/Pods-BookSeekerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4F7DABA4F1A32A629ADE4365 /* Pods_BookSeeker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookSeeker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -259,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				0269F8F223EF83B6005FD857 /* AlertType.swift */,
+				0269F92823F09832005FD857 /* SearchType.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -279,6 +294,7 @@
 				0269F8F823F05CEA005FD857 /* DepedencyInjection.swift */,
 				0269F8FA23F05CFD005FD857 /* FeatureAssembly.swift */,
 				0269F8FC23F05D91005FD857 /* ServiceAssembly.swift */,
+				0269F92D23F09F7D005FD857 /* ComponentAssembly.swift */,
 				0269F8FE23F05DAA005FD857 /* FactoryImplementation.swift */,
 			);
 			path = DepedencyInjection;
@@ -316,6 +332,7 @@
 			children = (
 				0269F91323F075BB005FD857 /* String+Extensions.swift */,
 				0269F91523F077A6005FD857 /* UIView+Extensions.swift */,
+				0269F93123F0ABC1005FD857 /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -323,6 +340,10 @@
 		0269F91723F09155005FD857 /* SearchTextField */ = {
 			isa = PBXGroup;
 			children = (
+				0269F92A23F098F3005FD857 /* View */,
+				0269F92623F095D0005FD857 /* BookSeekerSearchTextFieldViewControllerDelegate.swift */,
+				0269F92223F095C1005FD857 /* BookSeekerSearchTextFieldViewController.swift */,
+				0269F92423F095CA005FD857 /* BookSeekerSearchTextFieldViewModel.swift */,
 			);
 			path = SearchTextField;
 			sourceTree = "<group>";
@@ -343,6 +364,14 @@
 				0269F92023F094E3005FD857 /* PastSearchesViewModel.swift */,
 			);
 			path = PastSearches;
+			sourceTree = "<group>";
+		};
+		0269F92A23F098F3005FD857 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0269F92B23F098FC005FD857 /* SearchTextFieldItemView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		98F9D695D3979560F9D50360 /* Pods */ = {
@@ -597,12 +626,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0269F92523F095CA005FD857 /* BookSeekerSearchTextFieldViewModel.swift in Sources */,
 				0269F8FF23F05DAA005FD857 /* FactoryImplementation.swift in Sources */,
 				0269F8EC23EF69EC005FD857 /* BookCell.swift in Sources */,
 				0269F91B23F091FF005FD857 /* PastSearchesViewCell.swift in Sources */,
 				0203122523ECE2E30052E070 /* Search.swift in Sources */,
 				0269F90823F06304005FD857 /* BookSeekerDetailViewModel.swift in Sources */,
 				0269F90323F05DFD005FD857 /* FlowController.swift in Sources */,
+				0269F92723F095D1005FD857 /* BookSeekerSearchTextFieldViewControllerDelegate.swift in Sources */,
 				B1B751E4233D28D6002C83F2 /* AppDelegate.swift in Sources */,
 				0269F8E723EF6830005FD857 /* BaseTableViewController.swift in Sources */,
 				0269F92123F094E3005FD857 /* PastSearchesViewModel.swift in Sources */,
@@ -615,14 +646,19 @@
 				0203122E23ECEAB20052E070 /* BookRequest.swift in Sources */,
 				0269F90623F062F5005FD857 /* BookSeekerDetailViewController.swift in Sources */,
 				0269F8F623EF9385005FD857 /* BookSeekerSearchResultDelegate.swift in Sources */,
+				0269F92C23F098FC005FD857 /* SearchTextFieldItemView.swift in Sources */,
 				0269F8FD23F05D91005FD857 /* ServiceAssembly.swift in Sources */,
 				0269F91023F06E4C005FD857 /* ViewCustomizable.swift in Sources */,
 				0269F8FB23F05CFD005FD857 /* FeatureAssembly.swift in Sources */,
+				0269F92923F09832005FD857 /* SearchType.swift in Sources */,
 				0269F8E323EF6668005FD857 /* BookSeekerSearchResultViewController.swift in Sources */,
+				0269F92323F095C1005FD857 /* BookSeekerSearchTextFieldViewController.swift in Sources */,
+				0269F93223F0ABC1005FD857 /* UIViewController+Extensions.swift in Sources */,
 				0269F90E23F06A20005FD857 /* DetailsItemView.swift in Sources */,
 				0203122323ECE2900052E070 /* DataModel.xcdatamodeld in Sources */,
 				0269F8F323EF83B6005FD857 /* AlertType.swift in Sources */,
 				0269F91623F077A7005FD857 /* UIView+Extensions.swift in Sources */,
+				0269F92E23F09F7D005FD857 /* ComponentAssembly.swift in Sources */,
 				0203123023ECEB3D0052E070 /* ServiceManager.swift in Sources */,
 				0269F8F923F05CEA005FD857 /* DepedencyInjection.swift in Sources */,
 				0269F8F023EF8324005FD857 /* ViewLayoutable.swift in Sources */,

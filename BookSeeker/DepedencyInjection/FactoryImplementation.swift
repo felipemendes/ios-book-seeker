@@ -29,4 +29,8 @@ public class FactoryImplementation: Factory {
     public func makeBookSeekerDetailViewController(withIdentifier identifier: Int) -> BookSeekerDetailViewController {
         return resolver.resolve(BookSeekerDetailViewController.self, argument: identifier)!
     }
+
+    public func makeBookSeekerSearchTextFieldViewController() -> BookSeekerSearchTextFieldViewController {
+        return resolver.resolve(BookSeekerSearchTextFieldViewController.self)!
+    }
 }

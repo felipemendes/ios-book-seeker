@@ -17,5 +17,11 @@ public class ServiceAssembly: Assembly {
         container.register(ServiceManager.self) { _ in
             return ServiceManager()
         }
+
+        // MARK: - SearchDataAccessProvider
+
+        container.register(SearchDataAccessProvider.self) { _ in
+            return SearchDataAccessProvider()
+        }
     }
 }

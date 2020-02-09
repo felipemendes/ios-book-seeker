@@ -29,6 +29,7 @@ extension ViewLayoutable where Self: UIViewController {
             alertView.textLabel.text = "Loading ..."
         case .message(let message):
             alertView.textLabel.text = "Error: \(message)"
+            alertView.dismiss(afterDelay: 4.0)
         case .dismiss:
             alertView.dismiss(animated: true)
         }

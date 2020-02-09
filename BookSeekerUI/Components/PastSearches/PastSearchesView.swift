@@ -19,8 +19,8 @@ final class PastSearchesView: UIControl {
 
     private struct Constants {
         static let pastSearchesReuseIdentifier: String = "PastSearchesCell"
-        static let fontSize: CGFloat = 16
-        static let title: String = "Past Searches"
+        static let titleFontSize: CGFloat = 12
+        static let titleText: String = "Past Searches"
         static let amountPastSearchesToShow: Int = 10
         static let rowHeight: CGFloat = 20
     }
@@ -74,8 +74,9 @@ final class PastSearchesView: UIControl {
         let label = UILabel(frame: .zero)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 1
-        label.text = Constants.title
-        label.font = UIFont.systemFont(ofSize: Constants.fontSize)
+        label.text = Constants.titleText
+        label.font = UIFont.systemFont(ofSize: Constants.titleFontSize)
+        label.textColor = .lightGray
         return label
     }()
 

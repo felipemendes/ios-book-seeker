@@ -1,5 +1,5 @@
 //
-//  PastSearchesViewModel.swift
+//  BookSeekerSearchTextFieldViewModel.swift
 //  BookSeeker
 //
 //  Created by Felipe Mendes on 09/02/20.
@@ -10,7 +10,7 @@ import Foundation
 import RxSwift
 import CoreData
 
-public class PastSearchesViewModel {
+public class BookSeekerSearchTextFieldViewModel {
 
     // MARK: - PRIVATE PROPERTIES
 
@@ -33,6 +33,10 @@ public class PastSearchesViewModel {
 
     public func addSearch(keyword: String) {
         searchDataAccessProvider.add(keyword)
+    }
+
+    public func check(minLength length: Int, for keyword: String) -> Bool {
+        return keyword.count < length ? true : false
     }
 
     // MARK: - PRIVATE FUNCTIONS

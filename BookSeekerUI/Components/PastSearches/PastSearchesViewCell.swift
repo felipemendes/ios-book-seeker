@@ -13,7 +13,7 @@ class PastSearchesViewCell: UICollectionViewCell {
     // MARK: - CONSTANTS
 
     private struct Constants {
-        static let titleFontSize: CGFloat = 14
+        static let titleFontSize: CGFloat = 18
     }
 
     // MARK: - PROPERTIES
@@ -25,7 +25,7 @@ class PastSearchesViewCell: UICollectionViewCell {
     private lazy var valueLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.systemFont(ofSize: Constants.titleFontSize)
+        label.font = UIFont.boldSystemFont(ofSize: Constants.titleFontSize)
         return label
     }()
 
