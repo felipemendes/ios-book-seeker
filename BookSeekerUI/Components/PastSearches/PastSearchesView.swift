@@ -20,7 +20,7 @@ final class PastSearchesView: UIControl {
     private struct Constants {
         static let pastSearchesReuseIdentifier: String = "PastSearchesCell"
         static let titleFontSize: CGFloat = 12
-        static let titleText: String = "Past Searches"
+        static let titleText: String = NSLocalizedString("past_searches_title", comment: "")
         static let amountPastSearchesToShow: Int = 10
         static let rowHeight: CGFloat = 20
     }

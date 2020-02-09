@@ -16,7 +16,7 @@ public class BookSeekerDetailViewController: UIViewController, ViewLayoutable, H
     // MARK: - CONSTANTS
 
     private struct Constants {
-        static let noDataFound: String = "No data found"
+        static let noDataFound: String = NSLocalizedString("no_data_found", comment: "")
     }
 
     // MARK: - PROPERTIES

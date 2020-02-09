@@ -32,7 +32,7 @@ final public class DetailsItemView: UIView {
     private struct Constants {
         static let titleFontSize: CGFloat = 16
         static let descriptionFontSize: CGFloat = 12
-        static let publisherDescription: String = "Publisher Description"
+        static let publisherDescription: String = NSLocalizedString("detail_view_publisher_description", comment: "")
     }
 
     // MARK: - PROPERTIES

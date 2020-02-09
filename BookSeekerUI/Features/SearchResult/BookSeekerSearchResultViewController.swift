@@ -15,8 +15,8 @@ public class BookSeekerSearchResultViewController: BaseTableViewController<BookC
     // MARK: - CONSTANTS
 
     private struct Constants {
-        static let title: String = "In Your Library"
-        static let noDataFound: String = "No data found"
+        static let title: String =  NSLocalizedString("search_result_title", comment: "")
+        static let noDataFound: String =  NSLocalizedString("no_data_found", comment: "")
     }
 
     // MARK: - PROPERTIES

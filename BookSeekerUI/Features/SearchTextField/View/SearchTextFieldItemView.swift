@@ -35,9 +35,10 @@ final public class SearchTextFieldItemView: UIView {
     // MARK: - CONSTANTS
 
     private struct Constants {
+        static let textFieldIdentifier: String = "Search TextField"
         static let titleFontSize: CGFloat = 20
-        static let titleText: String = "Search"
-        static let searchPlaceholder: String = "Apple Books"
+        static let titleText: String = NSLocalizedString("search_view_title", comment: "")
+        static let searchPlaceholder: String = NSLocalizedString("search_view_placeholder", comment: "")
     }
 
     // MARK: - PROPERTIES
@@ -78,6 +79,7 @@ final public class SearchTextFieldItemView: UIView {
         textField.returnKeyType = .done
         textField.clearButtonMode = .whileEditing
         textField.delegate = self
+        textField.accessibilityIdentifier = Constants.textFieldIdentifier
         return textField
     }()
 
