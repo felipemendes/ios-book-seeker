@@ -27,12 +27,34 @@ public struct ServiceManager: Service {
 
     // MARK: - PUBLIC APIs
 
-    /// Get a book by term
+    /// Get a search books by term
     ///
     /// - Throws: Throws a Book and a possible error message
-    func getBook(withTerm term: String, completion: @escaping BookCompletion) {
+    func getBooks(withTerm term: String, completion: @escaping BookCompletion) {
 
-        provider.request(.getBook(term: term)) { response in
+        provider.request(.getBooks(term: term)) { response in
+            switch response {
+            case let .success(response):
+                do {
+                    let results = try JSONDecoder().decode(BookResponse.self, from: response.data)
+                    completion(results, nil)
+                } catch let error {
+                    completion(nil, "[API Error]: \(error.localizedDescription)")
+                    return
+                }
+            case let .failure(error):
+                completion(nil, "[API Error]: \(error.localizedDescription)")
+                return
+            }
+        }
+    }
+
+    /// Get a book by its identifier
+    ///
+    /// - Throws: Throws a Book and a possible error message
+    func getBook(byId bookId: Int, completion: @escaping BookCompletion) {
+
+        provider.request(.getBook(bookId: bookId)) { response in
             switch response {
             case let .success(response):
                 do {

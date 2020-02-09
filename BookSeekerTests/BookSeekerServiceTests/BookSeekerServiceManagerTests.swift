@@ -36,7 +36,32 @@ class BookSeekerServiceManagerTests: XCTestCase {
         let search = "Swift"
 
         // When
-        sut.getBook(withTerm: search) { response, error in
+        sut.getBooks(withTerm: search) { response, error in
+            if let error = error {
+                XCTFail("Error: \(error)")
+                return
+            }
+            bookResponse = response
+            errorResponse = error
+            expectation.fulfill()
+        }
+
+        // Then
+        wait(for: [expectation], timeout: 10.0)
+        XCTAssertNotNil(bookResponse)
+        XCTAssertNil(errorResponse)
+    }
+
+    /// Ensures that API is retrieving a valid book response from a search by its identifier
+    func test_api_retrieve_a_valid_book_response_by_identifier() throws {
+        // Given
+        let expectation = XCTestExpectation(description: "Retrieve a valid unique book from API")
+        var bookResponse: BookResponse?
+        var errorResponse: String?
+        let identifier = 881256329
+
+        // When
+        sut.getBook(byId: identifier) { response, error in
             if let error = error {
                 XCTFail("Error: \(error)")
                 return

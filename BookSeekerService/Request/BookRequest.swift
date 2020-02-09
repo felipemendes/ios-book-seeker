@@ -12,7 +12,8 @@ import Moya
 // MARK: - ENUM
 
 enum BookRequest {
-    case getBook(term: String)
+    case getBooks(term: String)
+    case getBook(bookId: Int)
 }
 
 extension BookRequest: TargetType {
@@ -26,8 +27,10 @@ extension BookRequest: TargetType {
 
     var path: String {
         switch self {
-        case .getBook:
+        case .getBooks:
             return "search"
+        case .getBook:
+            return "lookup"
         }
     }
 
@@ -41,9 +44,13 @@ extension BookRequest: TargetType {
 
     var task: Task {
         switch self {
-        case .getBook(let term):
+        case .getBooks(let term):
             let params: [String: Any] = ["term": term,
                                          "entity": "ibook"]
+            return .requestParameters(parameters: params,
+                                      encoding: URLEncoding.default)
+        case .getBook(let bookId):
+            let params: [String: Any] = ["id": bookId]
             return .requestParameters(parameters: params,
                                       encoding: URLEncoding.default)
         }

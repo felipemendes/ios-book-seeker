@@ -31,7 +31,7 @@ public class BookSeekerSearchResultViewModel {
     // MARK: - PUBLIC API
 
     func retrieveSearchBook(from term: String) {
-        serviceManager.getBook(withTerm: term) { response, error in
+        serviceManager.getBooks(withTerm: term) { response, error in
             self.handleBookResponse(response, error)
         }
     }
