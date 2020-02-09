@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.9.1)
+  - JGProgressHUD (2.1)
   - Kingfisher (4.10.1)
   - Moya (13.0.1):
     - Moya/Core (= 13.0.1)
@@ -18,6 +19,7 @@ PODS:
   - Swinject (2.7.1)
 
 DEPENDENCIES:
+  - JGProgressHUD
   - Kingfisher
   - Moya
   - RxBlocking (~> 4)
@@ -30,6 +32,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - JGProgressHUD
     - Kingfisher
     - Moya
     - Result
@@ -42,6 +45,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  JGProgressHUD: aa403e9a5b45cae98903c4600cccdd98c0c3ec90
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
@@ -52,6 +56,6 @@ SPEC CHECKSUMS:
   SwiftLint: c078a14d7d7ade75e5507795d185e3da41d844d2
   Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
 
-PODFILE CHECKSUM: 6669d288dfd03fc9b496f4050ff5095ad6005b28
+PODFILE CHECKSUM: 7ef8bf6c49af73b1dfcf6fd4afbe1b935f03a15b
 
 COCOAPODS: 1.8.4

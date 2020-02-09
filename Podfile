@@ -8,6 +8,7 @@ target 'BookSeeker' do
   pod 'Swinject'
   pod 'RxSwift', '~> 4'
   pod 'RxCocoa', '~> 4'
+  pod 'JGProgressHUD'
 end
 
 target 'BookSeekerTests' do
