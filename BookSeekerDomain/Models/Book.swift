@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Book: Codable {
+public struct Book: Codable {
     let bookId: Int
     let name: String
     let description: String
@@ -31,7 +31,7 @@ struct Book: Codable {
         case formattedPrice
     }
 
-    init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
 
         bookId = try container.decode(Int.self, forKey: .bookId)

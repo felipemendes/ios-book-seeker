@@ -26,7 +26,7 @@ extension ViewLayoutable where Self: UIViewController {
 
         switch type {
         case .loading:
-            alertView.textLabel.text = "Error on loading. Try again!"
+            alertView.textLabel.text = "Loading ..."
         case .message(let message):
             alertView.textLabel.text = "Error: \(message)"
         case .dismiss:

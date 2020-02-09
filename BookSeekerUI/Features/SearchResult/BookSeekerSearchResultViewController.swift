@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 import JGProgressHUD
 
-class BookSeekerSearchResultViewController: BaseTableViewController<BookCell, Book>, ViewLayoutable {
+public class BookSeekerSearchResultViewController: BaseTableViewController<BookCell, Book>, ViewLayoutable {
 
     // MARK: - CONSTANTS
 
@@ -91,7 +91,7 @@ class BookSeekerSearchResultViewController: BaseTableViewController<BookCell, Bo
 
     // MARK: - TABLEVIEW SETUP
 
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let bookId = items[indexPath.row].bookId
         delegate?.bookSeekerSearchResultDelegate(self, didTap: bookId)
     }

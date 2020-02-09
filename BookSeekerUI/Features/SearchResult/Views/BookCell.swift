@@ -9,7 +9,7 @@
 import UIKit
 import Kingfisher
 
-class BookCell: BaseTableViewCell<Book> {
+public class BookCell: BaseTableViewCell<Book> {
 
     // MARK: - METRICS
 
