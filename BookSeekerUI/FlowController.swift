@@ -39,12 +39,28 @@ public final class FlowController {
         viewController.delegate = self
         navigationController.pushViewController(viewController, animated: true)
     }
+
+    private func presentDetails(withIdentifier identifier: Int) {
+        let viewController = factory.makeBookSeekerDetailViewController(withIdentifier: identifier)
+        viewController.delegate = self
+        let detailNavigation = UINavigationController(rootViewController: viewController)
+        navigationController.present(detailNavigation, animated: true, completion: nil)
+    }
 }
 
 // MARK: - BookSeekerSearchResultDelegate
 
 extension FlowController: BookSeekerSearchResultDelegate {
     public func bookSeekerSearchResultDelegate(_ viewController: UIViewController, didTap bookId: Int) {
-        print(#function)
+        presentDetails(withIdentifier: bookId)
+    }
+}
+
+// MARK: - BookSeekerDetailViewControllerDelegate
+
+extension FlowController: BookSeekerDetailViewControllerDelegate {
+    public func bookSeekerDetailViewControllerDelegate(_ viewController: UIViewController, didTapLink url: String) {
+        guard let url = URL(string: url) else { return }
+        UIApplication.shared.open(url)
     }
 }

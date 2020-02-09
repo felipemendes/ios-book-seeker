@@ -30,6 +30,13 @@
 		0269F8FF23F05DAA005FD857 /* FactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0269F8FE23F05DAA005FD857 /* FactoryImplementation.swift */; };
 		0269F90123F05DDF005FD857 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0269F90023F05DDF005FD857 /* Factory.swift */; };
 		0269F90323F05DFD005FD857 /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0269F90223F05DFD005FD857 /* FlowController.swift */; };
+		0269F90623F062F5005FD857 /* BookSeekerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0269F90523F062F5005FD857 /* BookSeekerDetailViewController.swift */; };
+		0269F90823F06304005FD857 /* BookSeekerDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0269F90723F06304005FD857 /* BookSeekerDetailViewModel.swift */; };
+		0269F90A23F06315005FD857 /* BookSeekerDetailViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0269F90923F06315005FD857 /* BookSeekerDetailViewControllerDelegate.swift */; };
+		0269F90E23F06A20005FD857 /* DetailsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0269F90D23F06A20005FD857 /* DetailsItemView.swift */; };
+		0269F91023F06E4C005FD857 /* ViewCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0269F90F23F06E4C005FD857 /* ViewCustomizable.swift */; };
+		0269F91423F075BB005FD857 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0269F91323F075BB005FD857 /* String+Extensions.swift */; };
+		0269F91623F077A7005FD857 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0269F91523F077A6005FD857 /* UIView+Extensions.swift */; };
 		0DC3E15232745E2BF195F1E2 /* Pods_BookSeeker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F7DABA4F1A32A629ADE4365 /* Pods_BookSeeker.framework */; };
 		B1B751E4233D28D6002C83F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B751E3233D28D6002C83F2 /* AppDelegate.swift */; };
 		B1B751ED233D28D8002C83F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1B751EC233D28D8002C83F2 /* Assets.xcassets */; };
@@ -72,6 +79,13 @@
 		0269F8FE23F05DAA005FD857 /* FactoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryImplementation.swift; sourceTree = "<group>"; };
 		0269F90023F05DDF005FD857 /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
 		0269F90223F05DFD005FD857 /* FlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
+		0269F90523F062F5005FD857 /* BookSeekerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSeekerDetailViewController.swift; sourceTree = "<group>"; };
+		0269F90723F06304005FD857 /* BookSeekerDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSeekerDetailViewModel.swift; sourceTree = "<group>"; };
+		0269F90923F06315005FD857 /* BookSeekerDetailViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSeekerDetailViewControllerDelegate.swift; sourceTree = "<group>"; };
+		0269F90D23F06A20005FD857 /* DetailsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsItemView.swift; sourceTree = "<group>"; };
+		0269F90F23F06E4C005FD857 /* ViewCustomizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCustomizable.swift; sourceTree = "<group>"; };
+		0269F91323F075BB005FD857 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		0269F91523F077A6005FD857 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		31B8D881FA8E490F13BFE945 /* Pods-BookSeeker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookSeeker.release.xcconfig"; path = "Target Support Files/Pods-BookSeeker/Pods-BookSeeker.release.xcconfig"; sourceTree = "<group>"; };
 		3FC463FEE6B8A8869E69A364 /* Pods-BookSeekerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookSeekerTests.debug.xcconfig"; path = "Target Support Files/Pods-BookSeekerTests/Pods-BookSeekerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4F7DABA4F1A32A629ADE4365 /* Pods_BookSeeker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookSeeker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -212,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				0269F8EF23EF8324005FD857 /* ViewLayoutable.swift */,
+				0269F90F23F06E4C005FD857 /* ViewCustomizable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -245,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				0269F8E123EF6644005FD857 /* SearchResult */,
+				0269F90423F062E4005FD857 /* Detail */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -258,6 +274,42 @@
 				0269F8FE23F05DAA005FD857 /* FactoryImplementation.swift */,
 			);
 			path = DepedencyInjection;
+			sourceTree = "<group>";
+		};
+		0269F90423F062E4005FD857 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				0269F90C23F069EE005FD857 /* View */,
+				0269F90923F06315005FD857 /* BookSeekerDetailViewControllerDelegate.swift */,
+				0269F90523F062F5005FD857 /* BookSeekerDetailViewController.swift */,
+				0269F90723F06304005FD857 /* BookSeekerDetailViewModel.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		0269F90C23F069EE005FD857 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0269F90D23F06A20005FD857 /* DetailsItemView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0269F91123F0759F005FD857 /* BookSeekerUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				0269F91223F075AA005FD857 /* Extensions */,
+			);
+			path = BookSeekerUIKit;
+			sourceTree = "<group>";
+		};
+		0269F91223F075AA005FD857 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0269F91323F075BB005FD857 /* String+Extensions.swift */,
+				0269F91523F077A6005FD857 /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		98F9D695D3979560F9D50360 /* Pods */ = {
@@ -285,6 +337,7 @@
 			children = (
 				B1B751E2233D28D6002C83F2 /* BookSeeker */,
 				0269F8E023EF663B005FD857 /* BookSeekerUI */,
+				0269F91123F0759F005FD857 /* BookSeekerUIKit */,
 				0203123123EE282A0052E070 /* BookSeekerDomain */,
 				0203122B23ECEA6B0052E070 /* BookSeekerService */,
 				0203122023ECE25C0052E070 /* BookSeekerStorage */,
@@ -514,20 +567,27 @@
 				0269F8FF23F05DAA005FD857 /* FactoryImplementation.swift in Sources */,
 				0269F8EC23EF69EC005FD857 /* BookCell.swift in Sources */,
 				0203122523ECE2E30052E070 /* Search.swift in Sources */,
+				0269F90823F06304005FD857 /* BookSeekerDetailViewModel.swift in Sources */,
 				0269F90323F05DFD005FD857 /* FlowController.swift in Sources */,
 				B1B751E4233D28D6002C83F2 /* AppDelegate.swift in Sources */,
 				0269F8E723EF6830005FD857 /* BaseTableViewController.swift in Sources */,
 				0203123423EE28E60052E070 /* Book.swift in Sources */,
+				0269F91423F075BB005FD857 /* String+Extensions.swift in Sources */,
 				0203122723ECE2FD0052E070 /* SearchDataAccessProvider.swift in Sources */,
 				0269F8EE23EF6B8E005FD857 /* BookSeekerSearchResultViewModel.swift in Sources */,
+				0269F90A23F06315005FD857 /* BookSeekerDetailViewControllerDelegate.swift in Sources */,
 				0269F8E923EF69C2005FD857 /* BaseTableViewCell.swift in Sources */,
 				0203122E23ECEAB20052E070 /* BookRequest.swift in Sources */,
+				0269F90623F062F5005FD857 /* BookSeekerDetailViewController.swift in Sources */,
 				0269F8F623EF9385005FD857 /* BookSeekerSearchResultDelegate.swift in Sources */,
 				0269F8FD23F05D91005FD857 /* ServiceAssembly.swift in Sources */,
+				0269F91023F06E4C005FD857 /* ViewCustomizable.swift in Sources */,
 				0269F8FB23F05CFD005FD857 /* FeatureAssembly.swift in Sources */,
 				0269F8E323EF6668005FD857 /* BookSeekerSearchResultViewController.swift in Sources */,
+				0269F90E23F06A20005FD857 /* DetailsItemView.swift in Sources */,
 				0203122323ECE2900052E070 /* DataModel.xcdatamodeld in Sources */,
 				0269F8F323EF83B6005FD857 /* AlertType.swift in Sources */,
+				0269F91623F077A7005FD857 /* UIView+Extensions.swift in Sources */,
 				0203123023ECEB3D0052E070 /* ServiceManager.swift in Sources */,
 				0269F8F923F05CEA005FD857 /* DepedencyInjection.swift in Sources */,
 				0269F8F023EF8324005FD857 /* ViewLayoutable.swift in Sources */,

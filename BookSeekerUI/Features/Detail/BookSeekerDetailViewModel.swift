@@ -1,19 +1,15 @@
 //
-//  BookSeekerSearchResultViewModel.swift
+//  BookSeekerDetailViewModel.swift
 //  BookSeeker
 //
-//  Created by Felipe Mendes on 08/02/20.
+//  Created by Felipe Mendes on 09/02/20.
 //  Copyright © 2020 CIT. All rights reserved.
 //
 
 import RxSwift
 import Foundation
 
-// MARK: - ALIASES
-
-typealias BookResponseType = (bookResponse: BookResponse?, error: String?)
-
-public class BookSeekerSearchResultViewModel {
+public class BookSeekerDetailViewModel {
 
     // MARK: - PRIVATE PROPERTIES
 
@@ -32,8 +28,8 @@ public class BookSeekerSearchResultViewModel {
 
     // MARK: - PUBLIC API
 
-    func retrieveSearchBook(from term: String) {
-        serviceManager.getBooks(withTerm: term) { response, error in
+    func retrieveBook(for identifier: Int) {
+        serviceManager.getBook(byId: identifier) { response, error in
             self.handleBookResponse(response, error)
         }
     }

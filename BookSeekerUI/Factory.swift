@@ -14,4 +14,9 @@ public protocol Factory {
     ///
     /// - Returns: An instantiated BookSeekerSearchResultViewController
     func makeSearchResultViewController(withTerm term: String) -> BookSeekerSearchResultViewController
+
+    /// Builds a BookSeekerDetailViewController
+    ///
+    /// - Returns: An instantiated BookSeekerDetailViewController
+    func makeBookSeekerDetailViewController(withIdentifier identifier: Int) -> BookSeekerDetailViewController
 }

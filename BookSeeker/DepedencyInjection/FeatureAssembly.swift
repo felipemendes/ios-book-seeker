@@ -35,5 +35,18 @@ public class FeatureAssembly: Assembly {
             return BookSeekerSearchResultViewController(withTerm: term,
                                                         viewModel: viewModel)
         }
+
+        // MARK: - BookSeekerDetailViewController
+
+        container.register(BookSeekerDetailViewModel.self) { resolver in
+            let serviceManager = resolver.resolve(ServiceManager.self)!
+            return BookSeekerDetailViewModel(serviceManager: serviceManager)
+        }
+
+        container.register(BookSeekerDetailViewController.self) { (resolver, identifier: Int) in
+            let viewModel = resolver.resolve(BookSeekerDetailViewModel.self)!
+            return BookSeekerDetailViewController(identifier: identifier,
+                                                  viewModel: viewModel)
+        }
     }
 }
