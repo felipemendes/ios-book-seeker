@@ -47,6 +47,7 @@
 		0269F92C23F098FC005FD857 /* SearchTextFieldItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0269F92B23F098FC005FD857 /* SearchTextFieldItemView.swift */; };
 		0269F92E23F09F7D005FD857 /* ComponentAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0269F92D23F09F7D005FD857 /* ComponentAssembly.swift */; };
 		0269F93223F0ABC1005FD857 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0269F93123F0ABC1005FD857 /* UIViewController+Extensions.swift */; };
+		0269F93523F0B238005FD857 /* book-response.json in Resources */ = {isa = PBXBuildFile; fileRef = 0269F93423F0B238005FD857 /* book-response.json */; };
 		0DC3E15232745E2BF195F1E2 /* Pods_BookSeeker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F7DABA4F1A32A629ADE4365 /* Pods_BookSeeker.framework */; };
 		B1B751E4233D28D6002C83F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B751E3233D28D6002C83F2 /* AppDelegate.swift */; };
 		B1B751ED233D28D8002C83F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1B751EC233D28D8002C83F2 /* Assets.xcassets */; };
@@ -106,6 +107,7 @@
 		0269F92B23F098FC005FD857 /* SearchTextFieldItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextFieldItemView.swift; sourceTree = "<group>"; };
 		0269F92D23F09F7D005FD857 /* ComponentAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentAssembly.swift; sourceTree = "<group>"; };
 		0269F93123F0ABC1005FD857 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		0269F93423F0B238005FD857 /* book-response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "book-response.json"; sourceTree = "<group>"; };
 		31B8D881FA8E490F13BFE945 /* Pods-BookSeeker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookSeeker.release.xcconfig"; path = "Target Support Files/Pods-BookSeeker/Pods-BookSeeker.release.xcconfig"; sourceTree = "<group>"; };
 		3FC463FEE6B8A8869E69A364 /* Pods-BookSeekerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookSeekerTests.debug.xcconfig"; path = "Target Support Files/Pods-BookSeekerTests/Pods-BookSeekerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4F7DABA4F1A32A629ADE4365 /* Pods_BookSeeker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookSeeker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,6 +173,7 @@
 		0203122B23ECEA6B0052E070 /* BookSeekerService */ = {
 			isa = PBXGroup;
 			children = (
+				0269F93323F0B20D005FD857 /* Stubs */,
 				0203122C23ECEA940052E070 /* Request */,
 				0203122F23ECEB3D0052E070 /* ServiceManager.swift */,
 			);
@@ -374,6 +377,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		0269F93323F0B20D005FD857 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				0269F93423F0B238005FD857 /* book-response.json */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
 		98F9D695D3979560F9D50360 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -526,6 +537,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1B751F0233D28D8002C83F2 /* LaunchScreen.storyboard in Resources */,
+				0269F93523F0B238005FD857 /* book-response.json in Resources */,
 				B1B751ED233D28D8002C83F2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

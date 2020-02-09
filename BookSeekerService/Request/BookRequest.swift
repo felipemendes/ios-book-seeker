@@ -39,7 +39,15 @@ extension BookRequest: TargetType {
     }
 
     var sampleData: Data {
-        return Data()
+        switch self {
+        case .getBooks,
+             .getBook:
+            guard let url = Bundle.main.url(forResource: "book-response", withExtension: "json"),
+                let data = try? Data(contentsOf: url) else {
+                    return Data()
+            }
+            return data
+        }
     }
 
     var task: Task {

@@ -24,6 +24,7 @@ public struct ServiceManager: Service {
     // MARK: - PROPERTIES
 
     let provider = MoyaProvider<BookRequest>(plugins: [NetworkLoggerPlugin(verbose: true)])
+    let providerMock = MoyaProvider<BookRequest>(stubClosure: MoyaProvider.immediatelyStub)
 
     // MARK: - PUBLIC APIs
 
@@ -66,6 +67,30 @@ public struct ServiceManager: Service {
                 }
             case let .failure(error):
                 completion(nil, "[API Error]: \(error.localizedDescription)")
+                return
+            }
+        }
+    }
+
+    // MARK: - MOCK DATA
+
+    /// Get a mocked search books by term
+    ///
+    /// - Throws: Throws a mocked Book and a possible error message
+    func getMockBooks(withTerm term: String, completion: @escaping BookCompletion) {
+
+        providerMock.request(.getBooks(term: term)) { response in
+            switch response {
+            case let .success(response):
+                do {
+                    let results = try JSONDecoder().decode(BookResponse.self, from: response.data)
+                    completion(results, nil)
+                } catch let error {
+                    completion(nil, "[Mock Error]: \(error.localizedDescription)")
+                    return
+                }
+            case let .failure(error):
+                completion(nil, "[Mock Error]: \(error.localizedDescription)")
                 return
             }
         }

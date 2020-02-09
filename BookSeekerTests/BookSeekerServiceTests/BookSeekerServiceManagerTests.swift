@@ -76,4 +76,29 @@ class BookSeekerServiceManagerTests: XCTestCase {
         XCTAssertNotNil(bookResponse)
         XCTAssertNil(errorResponse)
     }
+
+    /// Ensures that mocked API is retrieving a valid book response from a search keyword
+    func test_mock_api_retrieve_a_valid_book_response() throws {
+        // Given
+        let expectation = XCTestExpectation(description: "Retrieve a valid book from mock API")
+        var bookResponse: BookResponse?
+        var errorResponse: String?
+        let search = "Swift"
+
+        // When
+        sut.getMockBooks(withTerm: search) { response, error in
+            if let error = error {
+                XCTFail("Error: \(error)")
+                return
+            }
+            bookResponse = response
+            errorResponse = error
+            expectation.fulfill()
+        }
+
+        // Then
+        wait(for: [expectation], timeout: 10.0)
+        XCTAssertNotNil(bookResponse)
+        XCTAssertNil(errorResponse)
+    }
 }

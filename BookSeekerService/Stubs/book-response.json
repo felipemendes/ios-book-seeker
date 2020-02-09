@@ -1,0 +1,38 @@
+{ 
+   "resultCount":1,
+   "results":[ 
+      { 
+         "fileSizeBytes":4370219,
+         "trackCensoredName":"The Swift Programming Language (Swift 5.1)",
+         "artistViewUrl":"https://books.apple.com/us/artist/apple-inc/405307759?uo=4",
+         "trackViewUrl":"https://books.apple.com/us/book/the-swift-programming-language-swift-5-1/id881256329?uo=4",
+         "artworkUrl60":"https://is2-ssl.mzstatic.com/image/thumb/Publication123/v4/59/4c/6a/594c6a5a-45e4-4e9b-0f90-ecf59a8ccb48/source/60x60bb.jpg",
+         "artworkUrl100":"https://is2-ssl.mzstatic.com/image/thumb/Publication123/v4/59/4c/6a/594c6a5a-45e4-4e9b-0f90-ecf59a8ccb48/source/100x100bb.jpg",
+         "trackId":881256329,
+         "trackName":"The Swift Programming Language (Swift 5.1)",
+         "artistIds":[ 
+            405307759
+         ],
+         "releaseDate":"2014-06-02T07:00:00Z",
+         "genreIds":[ 
+            "10023",
+            "38",
+            "9027"
+         ],
+         "formattedPrice":"Free",
+         "currency":"USD",
+         "kind":"ebook",
+         "artistId":405307759,
+         "artistName":"Apple Inc.",
+         "genres":[ 
+            "Programming",
+            "Books",
+            "Computers & Internet"
+         ],
+         "price":0.00,
+         "description":"Swift is a programming language for creating iOS, macOS, watchOS, and tvOS apps. Swift builds on the best of C and Objective-C, without the constraints of C compatibility. Swift adopts safe programming patterns and adds modern features to make programming easier, more flexible, and more fun. Swift’s clean slate, backed by the mature and much-loved Cocoa and Cocoa Touch frameworks, is an opportunity to reimagine how software development works.<br /><br />\nThis book provides:<br />\n- A tour of the language.<br />\n- A detailed guide delving into each language feature.<br />\n- A formal reference for the language.",
+         "averageUserRating":4.5,
+         "userRatingCount":1603
+      }
+   ]
+}
