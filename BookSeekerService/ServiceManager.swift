@@ -15,7 +15,7 @@ protocol Service {
     var provider: MoyaProvider<T> { get }
 }
 
-struct ServiceManager: Service {
+public struct ServiceManager: Service {
 
     // MARK: - TYPEALIASES
 
