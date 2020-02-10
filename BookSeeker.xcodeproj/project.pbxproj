@@ -55,6 +55,8 @@
 		B1B751ED233D28D8002C83F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1B751EC233D28D8002C83F2 /* Assets.xcassets */; };
 		B1B751F0233D28D8002C83F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1B751EE233D28D8002C83F2 /* LaunchScreen.storyboard */; };
 		CDB38D78F99DBF468B5FD9A3 /* libPods-BookSeekerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E77C74A7E0FFDC864FCE131B /* libPods-BookSeekerTests.a */; };
+		DB65620C23F192810052FD75 /* ServiceManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB65620B23F192810052FD75 /* ServiceManagerMock.swift */; };
+		DB65620E23F193BE0052FD75 /* BookSeekerServiceManagerMockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB65620D23F193BE0052FD75 /* BookSeekerServiceManagerMockTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +135,8 @@
 		B1B751F1233D28D8002C83F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1B751F6233D28D8002C83F2 /* BookSeekerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookSeekerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1B751FC233D28D8002C83F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB65620B23F192810052FD75 /* ServiceManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManagerMock.swift; sourceTree = "<group>"; };
+		DB65620D23F193BE0052FD75 /* BookSeekerServiceManagerMockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSeekerServiceManagerMockTests.swift; sourceTree = "<group>"; };
 		E77C74A7E0FFDC864FCE131B /* libPods-BookSeekerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BookSeekerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC538FD9C107A4556A3DE6B7 /* Pods-BookSeekerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookSeekerTests.release.xcconfig"; path = "Target Support Files/Pods-BookSeekerTests/Pods-BookSeekerTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -199,6 +203,7 @@
 				0269F93323F0B20D005FD857 /* Stubs */,
 				0203122C23ECEA940052E070 /* Request */,
 				0203122F23ECEB3D0052E070 /* ServiceManager.swift */,
+				DB65620B23F192810052FD75 /* ServiceManagerMock.swift */,
 			);
 			path = BookSeekerService;
 			sourceTree = "<group>";
@@ -241,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				0203124423EF4DA80052E070 /* BookSeekerServiceManagerTests.swift */,
+				DB65620D23F193BE0052FD75 /* BookSeekerServiceManagerMockTests.swift */,
 			);
 			path = BookSeekerServiceTests;
 			sourceTree = "<group>";
@@ -745,6 +751,7 @@
 				0269F8F323EF83B6005FD857 /* AlertType.swift in Sources */,
 				0269F91623F077A7005FD857 /* UIView+Extensions.swift in Sources */,
 				0269F92E23F09F7D005FD857 /* ComponentAssembly.swift in Sources */,
+				DB65620C23F192810052FD75 /* ServiceManagerMock.swift in Sources */,
 				0203123023ECEB3D0052E070 /* ServiceManager.swift in Sources */,
 				0269F8F923F05CEA005FD857 /* DepedencyInjection.swift in Sources */,
 				0269F8F023EF8324005FD857 /* ViewLayoutable.swift in Sources */,
@@ -758,6 +765,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB65620E23F193BE0052FD75 /* BookSeekerServiceManagerMockTests.swift in Sources */,
 				0203123D23EE377F0052E070 /* BookSeekerStorageTests.swift in Sources */,
 				0203124523EF4DA80052E070 /* BookSeekerServiceManagerTests.swift in Sources */,
 			);
